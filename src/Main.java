@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+
 public class Main {
     //задача 1
     public static void definesTheYear(int year) {
@@ -14,7 +15,7 @@ public class Main {
         if (clientDeviceYear >= clientDeviceYear && clientOS == 1) {
             System.out.print("Вам подойдет версия приложения для android");
         }
-        if (clientDeviceYear <clientDeviceYear && clientOS == 1) {
+        if (clientDeviceYear < clientDeviceYear && clientOS == 1) {
             System.out.println("Вам подойдет облегченная версия для android");
         }
         if (clientDeviceYear >= clientDeviceYear && clientOS == 0) {
