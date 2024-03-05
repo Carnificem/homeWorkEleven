@@ -12,16 +12,17 @@ public class Main {
 
     //задача 2
     public static void checkingPhoneYear(int clientDeviceYear, int clientOS) {
-        if (clientDeviceYear >= clientDeviceYear && clientOS == 1) {
+        int currentYear = LocalDate.now().getYear();
+        if (clientDeviceYear>=currentYear  && clientOS == 1) {
             System.out.print("Вам подойдет версия приложения для android");
         }
-        if (clientDeviceYear < clientDeviceYear && clientOS == 1) {
+        if (clientDeviceYear < currentYear && clientOS == 1) {
             System.out.println("Вам подойдет облегченная версия для android");
         }
-        if (clientDeviceYear >= clientDeviceYear && clientOS == 0) {
+        if (clientDeviceYear >= currentYear && clientOS == 0) {
             System.out.println("Вам подойдет версия для IoS");
         }
-        if (clientDeviceYear < clientDeviceYear && clientOS == 0) {
+        if (clientDeviceYear < currentYear && clientOS == 0) {
             System.out.println("Вам подойдет облегченная версия для IoS");
         }
     }
@@ -46,7 +47,7 @@ public class Main {
         definesTheYear(year);
         //задача 2
         System.out.println("Задача 2");
-        int clientDeviceYear = LocalDate.now().getYear();
+        int clientDeviceYear = 2027;
         int clientOS = 1;
         checkingPhoneYear(clientDeviceYear, clientOS);
         System.out.println();
